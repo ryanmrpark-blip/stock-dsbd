@@ -1,0 +1,10 @@
+[project]
+name = "stock-dsbd"
+version = "0.1.0"
+description = "Stock Dashboard and Exploratory Data Analysis"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv]
+package = false
