@@ -7,6 +7,7 @@
 ## 📊 대시보드 미리보기 및 주요 기능
 
 - **독립형 정적 HTML 배포**: 백엔드 서버 없이 브라우저 단독 구동 가능 ([`reports/etf_dashboard.html`](file:///c:/Users/ryanm/OneDrive/문서/antigravity/eda/stock-dsbd/reports/etf_dashboard.html), GitHub Pages 배포용 [`docs/index.html`](file:///c:/Users/ryanm/OneDrive/문서/antigravity/eda/stock-dsbd/docs/index.html))
+- **실시간 데이터 새로고침**: 대시보드 상단의 **'실시간 새로고침'** 버튼 클릭 시, 브라우저에서 직접 네이버 증권 API를 호출(CORS 프록시 자동 폴백)하여 백엔드 재배포 없이 1,070여 개 전 종목 시세 및 지표를 즉시 최신화
 - **핵심 KPI 카드**: 전체 AUM(조원), 당일 거래대금(억원), 시장 등락 비율 바, 평균 iNav 괴리율
 - **4대 ECharts 시각화**:
   1. **운용사별 점유율**: KODEX, TIGER, ACE, RISE 등 트리맵 / 도넛 차트 토글
@@ -45,6 +46,7 @@ stock-dsbd/
 │   ├── __init__.py                # 패키지 초기화
 │   ├── utils.py                   # 경로 보조 함수 및 공통 유틸리티
 │   ├── fetch_etf.py               # 네이버 API 전수 수집 및 전처리 모듈
+│   ├── template.html              # 대시보드 프론트엔드 HTML/JS 템플릿
 │   ├── generate_dashboard.py      # 정적 대시보드 HTML 렌더러
 │   └── main.py                    # 원클릭 실행 메인 스크립트
 ├── tests/

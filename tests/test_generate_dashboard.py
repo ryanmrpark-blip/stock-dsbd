@@ -113,6 +113,7 @@ class TestGenerateDashboard(unittest.TestCase):
         self.assertIn("chart-return", html_content)
         self.assertIn("chart-scatter", html_content)
         self.assertIn("etf-table", html_content)
+        self.assertIn("btn-live-refresh", html_content)
 
         # 데이터 내장 여부 확인
         self.assertIn("069500", html_content)
